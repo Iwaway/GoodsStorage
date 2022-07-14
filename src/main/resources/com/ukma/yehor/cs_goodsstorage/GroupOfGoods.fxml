@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ukma.yehor.cs_goodsstorage.controller.GroupOfGoodsController">
+   <center>
+      <TableView fx:id="tableView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <ButtonBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <buttons>
+          <Button mnemonicParsing="false" onAction="#addGood" text="Add Good" />
+            <Button mnemonicParsing="false" onAction="#delGood" text="Del Good" />
+            <Button mnemonicParsing="false" onAction="#addGroup" text="Add Group" />
+            <Button mnemonicParsing="false" onAction="#delGroup" text="Del Group" />
+            <Button mnemonicParsing="false" onAction="#allGoods" text="All Goods" />
+        </buttons>
+      </ButtonBar>
+   </bottom>
+   <top>
+      <ButtonBar prefHeight="34.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+        <buttons>
+            <Button mnemonicParsing="false" onAction="#addAmount" text="Add amount" />
+            <Button minWidth="64.0" mnemonicParsing="false" onAction="#deleteAmount" prefHeight="29.0" text="Del ampunt" />
+            <Button mnemonicParsing="false" onAction="#editNameOfGood" text="Edit Name" />
+            <Label fx:id="total" text="Total: " />
+        </buttons>
+      </ButtonBar>
+   </top>
+</BorderPane>
